@@ -1,2 +1,2 @@
 # Javascript
- Meu repositório
+ Meu repositório de Javascript!
