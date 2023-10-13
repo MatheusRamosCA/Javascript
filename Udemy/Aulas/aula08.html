@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação javascript</title>
+</head>
+<body>
+    <h1>Lógica de programação javascript</h1>
+    <script>
+        var nome = prompt("Digite seu nome")
+        var comprimento = nome.length
+
+        switch (comprimento){
+            case 1:
+                alert ('Muito pequeno')
+                break
+            case 2:
+                alert ('Pequeno')
+                break
+            case 3:
+                alert ('Ta melhorando')
+                break
+            default:
+                alert ('Já é maior seu nome')
+        }
+
+        var numero = 10
+
+        switch (typeof numero){
+            case "number":
+            alert ('É numero')
+            break
+            case "string":
+            alert ('É string')
+        }
+
+        if (typeof numero === "number"){
+            alert ('É numero');
+        } else if (typeof nummero === "string") {
+            alert ('É string');
+        }
+    </script>
+</body>
+</html>
