@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação Javascript</title>
+</head>
+<body>
+    <h1>Lógica de programação Javascript</h1>
+    <script>
+        var j1 = parseFloat(prompt("Jogador 1 digite um número:"))
+        var j2 = parseFloat(prompt("Jogador 2 digite um número:"))
+
+        if (j1 === j2) {
+            alert ("Vocês empataram...");
+        } else {
+            var nsorteado = parseInt (Math.random() * 2);
+            if (nsorteado === 0) {
+                if (j1 < j2) {
+                    alert ("O jogador 1 ganhou");
+                } else alert ("O jogador 2 ganhou");
+            } else {
+                if (j1 > j2) {
+                    alert ("O jogador 1 ganhou");
+                } else alert ("O jogador 2 ganhou");
+            }
+        }   
+    </script>
+</body>
+</html>
