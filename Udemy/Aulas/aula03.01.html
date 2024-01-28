@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação Javascript</title>
+</head>
+<body>
+    <h1>Lógica de programação Javascript</h1>
+    <script>
+        var num = parseFloat (prompt("Digite um número:"))
+
+        var indice = 1
+        // fazer com que indice seja <= 1000
+
+        while (indice <= 1000) {
+            document.write (num + ' x ' + indice + '=' + (num * indice) + '<br>')
+            indice = indice + 1
+        }
+        document.write ("Fim do loop")
+
+        /* Também pode resolver esse problema usando o looping for, exemplo:
+
+            for (indice = 1; indice <= 1000; indice++){
+                document.write (num + ' x ' + indice + '=' + (num * indice) + '<br>')
+            }
+        */
+    </script>
+</body>
+</html> 
