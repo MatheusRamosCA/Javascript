@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação Javascript</title>
+</head>
+<body>
+    <h1>Lógica de programação Javascript</h1>
+    <button onclick="mostrararea(largura, altura)">Mostrar área</button>
+    <script>
+        var largura = parseFloat(prompt("Digite a largura:  "));
+        var altura = parseFloat(prompt("Digite a altura:"));
+
+        function mostrararea(l, a){
+            alert ("A área tem o tamanho: " + l + " de largura por " + a + " de altura.");
+            alert ("Área total: " + (l * a))
+        }
+    </script>
+</body>
+</html>

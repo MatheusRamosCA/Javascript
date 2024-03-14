@@ -10,11 +10,60 @@
     <button onclick="subtrair()">-</button>
     <button onclick="multiplicar()">*</button>
     <button onclick="dividir()">/</button>
+    <button onclick="novo()">++</button>
+    <button onclick="limpar()">   </button>
 
     <div id="output"></div>
     <script>
         var n1 = prompt("Digite um número: ");
         n1 = parseFloat (n1);
+
+        escreve ()
+        function escreve () {
+            var output = document.querySelector('#output');
+            output.innerHTML = n1;
+        }
+
+        function somar () {
+            var n2 = prompt("Digite um outro número");
+            n2 = parseFloat (n2);
+            
+            //n1 = n1+n2; É a mesma coisa...
+            n1 += n2;
+            escreve ();
+            }
+        
+        function subtrair () {
+            var n2 = prompt("Digite um outro número");
+            n2 = parseFloat (n2);
+        
+            n1 = n1-n2;
+            escreve ();
+            }
+        function multiplicar () {
+            var n2 = prompt("Digite um outro número");
+            n2 = parseFloat (n2);
+            
+            n1 = n1*n2;
+            escreve ();
+            }
+        function dividir () {
+            var n2 = prompt("Digite um outro número");
+            n2 = parseFloat (n2);
+            
+            n1 = n1/n2;
+            escreve ();
+            }
+        function novo () {
+            var n1 = prompt("Digite um número: ");
+            n1 = parseFloat (n1);
+            escreve ()
+            output.innerHTML = n1;
+        }
+        function limpar (){
+            n1 = '';
+            output.innerHTML = n1;
+        }
     </script>
 </body>
 </html>
