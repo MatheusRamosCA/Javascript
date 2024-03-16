@@ -24,7 +24,12 @@
 
             var n2 = parseFloat(prompt("Digite outro número "))
 
-            var msg = calcular(simbolo, n1, n2)
+            try{
+                var msg = calcular(simbolo, n1, n2)
+            } catch (e){
+                alert (e);
+                return; 
+            }
 
             escreve (msg)
         }
@@ -36,13 +41,11 @@
 
         function calcular (simbolo, n1, n2) {
 
-            if (simbolo !== '+' || simbolo !== '-' || simbolo !== '*' || simbolo !== '/'){
-                alert ('Digite um símbolo válido')
-                return 0;
+            if (simbolo !== '+' && simbolo !== '-' && simbolo !== '*' && simbolo !== '/'){
+                throw new Error ('Digite um símbolo válido')
             }
             if (isNaN(n1) || isNaN(n2)){
-                alert ('Chama passando somente números')
-                return 0;
+                throw new Error ('Chama passando somente números')
             }
 
             switch(simbolo){
