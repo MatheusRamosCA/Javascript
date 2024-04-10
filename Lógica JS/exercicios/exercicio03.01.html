@@ -10,31 +10,16 @@
     <script>
         var n = parseFloat(prompt('Digite um número: '));
 
-        for (var i=1; i<=1000; i++){
-            document.write(n + ' X ' + i + ' = ' + (n*i) + '<br>');
-        }
-        /*
-
-        var indice = 1
-        //repita até que o n seja <= 1000
-
-        do{
-        document.write(n + ' X ' + indice + ' = ' + (n*indice) + '<br>');
-
-        indice = indice + 1;
-        } while (indice <=1000) 
-        document.write('Saiu do loop');
-        
-        var indice = 1;
-        //repita até que o n seja <= 1000
+        var indice = 0;
 
         while(indice <=1000){
         document.write(n + ' X ' + indice + ' = ' + (n*indice) + '<br>');
 
+        if (indice % 10 == 0 && indice > 0){
+            document.write('<hr>');
+        }
         indice = indice + 1;
         }
-        document.write('Saiu do loop');
-        */
     </script>
 </body>
 </html>
