@@ -1,1 +1,1 @@
-alert ("Olá mundo em javascript!")
+alert ("Olá mundão")
